@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/Api\/tests\/users[1:3]","start":1666231351761,"end":1666231353612,"title":"src\/test\/java\/Api\/tests\/users[1:3] 21:02:31.761-21:02:33.612 Get users"},{"id":2,"group":1,"content":"src\/test\/java\/Api\/tests\/users[2:8]","start":1666231353622,"end":1666231354248,"title":"src\/test\/java\/Api\/tests\/users[2:8] 21:02:33.622-21:02:34.248 Post new user"},{"id":3,"group":1,"content":"src\/test\/java\/Api\/tests\/users[3:14]","start":1666231354263,"end":1666231354844,"title":"src\/test\/java\/Api\/tests\/users[3:14] 21:02:34.263-21:02:34.844 Put request"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

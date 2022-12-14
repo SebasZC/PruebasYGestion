@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.Api.tests.users</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-12-10 10:41:56 p. m.</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[3:24]"><span>[3:24]</span> <span>Put request</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/Api/tests/users.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Get user on resq</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:24]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:24]</span>
+                <span class="scenario-name">Put request</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1540</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://api.xmltime.com&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">103</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;/astrodata?expires=2022-12-11T04%3A02%3A19%2B00%3A00&amp;signature=u4lAhgGMvDu4dadSiBmucN2BaWk%3D&amp;accesskey=dGR6SGRSfr&amp;version=3&amp;prettyprint=1&amp;object=sun&amp;placeid=norway%2Foslo&amp;interval=2022-12-11T02%3A02%3A19&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1284</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.27">22:41:55.953 request:
+1 &gt; GET https://api.xmltime.com/astrodata%3Fexpires=2022-12-11T04%253A02%253A19%252B00%253A00&amp;signature=u4lAhgGMvDu4dadSiBmucN2BaWk%253D&amp;accesskey=dGR6SGRSfr&amp;version=3&amp;prettyprint=1&amp;object=sun&amp;placeid=norway%252Foslo&amp;interval=2022-12-11T02%253A02%253A19
+1 &gt; Host: api.xmltime.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.17)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+22:41:56.617 response time in milliseconds: 660
+1 &lt; 200
+1 &lt; Date: Sun, 11 Dec 2022 03:41:56 GMT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Vary: Accept-Encoding
+1 &lt; Content-Type: application/json; charset=UTF-8
+1 &lt; Accept-Ranges: bytes
+{
+	&quot;version&quot;: 3,
+	&quot;billing&quot;: {
+		&quot;credits&quot;: 1
+	},
+	&quot;locations&quot;: [{
+		&quot;id&quot;: &quot;187&quot;,
+		&quot;geo&quot;: {
+			&quot;name&quot;: &quot;Oslo&quot;,
+			&quot;country&quot;: {
+				&quot;id&quot;: &quot;no&quot;,
+				&quot;name&quot;: &quot;Norway&quot;
+			},
+			&quot;latitude&quot;: 59.913,
+			&quot;longitude&quot;: 10.740,
+			&quot;zonename&quot;: &quot;Europe/Oslo&quot;
+		},
+		&quot;matchparam&quot;: &quot;norway/oslo&quot;,
+		&quot;astronomy&quot;: {
+			&quot;objects&quot;: [{
+				&quot;name&quot;: &quot;sun&quot;,
+				&quot;results&quot;: [{
+					&quot;azimuth&quot;: 58.4,
+					&quot;altitude&quot;: -42.5,
+					&quot;distance&quot;: 147316000
+				}]
+			}]
+		}
+	}]
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.version == 3</span>
+      </div>
+    </div>
+    <div class="time-cell passed">150</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref failed">30</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match $.locations.id == &#39;187&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.30">22:41:56.826 src/test/java/Api/tests/users.feature:30
+And match $.locations.id == &#39;187&#39;
+match failed: EQUALS
+  $ | actual path does not exist (STRING:STRING)
+  &#39;#notpresent&#39;
+  &#39;187&#39;
+
+src/test/java/Api/tests/users.feature:30
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
