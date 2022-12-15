@@ -44,7 +44,7 @@ class HomePage extends Page {
 
     await $(
       '(//div[@class = "Box__box___2XzJ2 Gallery__items-box___2hOZl"]/div/div/button)[' +
-        getRandomBooking(7) +
+        (getRandomBooking(6)+1) +
         "]"
     ).click();
   }
